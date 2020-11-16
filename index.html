@@ -11,7 +11,7 @@
 <body>
     
     <div id = "app">
-        <input 
+        <!-- <input 
             type="text" 
             placeholder="inserisci il tuo nome"
             v-model="nome"
@@ -35,7 +35,17 @@
         
         <h1>Benvenuto {{ nome }} {{ cognome }}</h1>
         <h3>Sono Jarvis, ecco il tuo messaggio da inviare in anteprima:</h3>
-        <p>{{testo}}</p>
+        <p>{{testo}}</p> -->
+
+        <div class="contenuto">
+            <!-- <h1>Testo del titolo</h1> -->
+            <!-- per rendere il contenuto del titolo dinamico -->
+            <h1>{{ message }}</h1>
+
+            <img :src="logo" :alt="title">
+        </div>
+
+
     </div>
 
     <!-- js -->
